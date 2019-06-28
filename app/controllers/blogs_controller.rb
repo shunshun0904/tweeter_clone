@@ -10,8 +10,14 @@ class BlogsController < ApplicationController
 
   # 追記する
   def create
-    Blog.create(params[:blog])
-    redirect_to new_blog_path
+    @blog = Blog.new(blog_params)
+    if @blog.save
+      # 一覧画面へ遷移して"ブログを作成しました！"とメッセージを表示します。
+      redirect_to blogs_path, notice: "ツイートを投稿しました！"
+    else
+      # 入力フォームを再描画します。
+      render 'new'
+    end
   end
 
   def show
