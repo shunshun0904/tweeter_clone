@@ -5,8 +5,14 @@ class BlogsController < ApplicationController
 
   # 追記する
   def create
-    Blog.create(title: params[:blog][:title], content: params[:blog][:content])
+    Blog.create(params[:blog])
     redirect_to new_blog_path
+  end
+
+  private
+
+  def blog_params
+    params.require(:blog).permit(:content)
   end
 
 end
