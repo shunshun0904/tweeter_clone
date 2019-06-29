@@ -1,0 +1,5 @@
+current directory: /Users/shun/reserch/master/rails/task/sns/vendor/bundle/ruby/2.4.0/gems/childprocess-1.0.1/ext
+/Users/shun/.rbenv/versions/2.4.5/bin/ruby mkrf_conf.rb
+
+current directory: /Users/shun/reserch/master/rails/task/sns/vendor/bundle/ruby/2.4.0/gems/childprocess-1.0.1/ext
+/Users/shun/.rbenv/versions/2.4.5/bin/ruby -rubygems /Users/shun/reserch/master/rails/task/sns/vendor/bundle/ruby/2.4.0/gems/rake-12.3.2/exe/rake RUBYARCHDIR=/Users/shun/reserch/master/rails/task/sns/vendor/bundle/ruby/2.4.0/extensions/x86_64-darwin-17/2.4.0-static/childprocess-1.0.1 RUBYLIBDIR=/Users/shun/reserch/master/rails/task/sns/vendor/bundle/ruby/2.4.0/extensions/x86_64-darwin-17/2.4.0-static/childprocess-1.0.1
