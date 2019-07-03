@@ -22,23 +22,27 @@
 </nav>
 
 
-<h1>tweet一覧</h1>
-<p><%= notice %></p>
-<table>
-  <tr>
-    <th>tweet内容</th>
-  </tr>
+<h1 align="center">tweet一覧</h1>
+<h1 align="center"><%= notice %></h1>
 
+<div style="text-align:center;">
+    <%= link_to '新しくツイートを投稿する',  new_blog_path %>
+</div>
+
+<table align="center">
 <% @blogs.each do |blog| %>
   <tr>
-    <td><%= blog.content %></td>
-
+    <td height="80"><%= simple_format(blog.content) %></td>
     <td><%= link_to '詳細を確認する', blog_path(blog.id) %></td>
     <td><%= link_to "tweetを編集する", edit_blog_path(blog.id) %></td>
     <td><%= link_to 'tweetを削除する', blog_path(blog.id), method: :delete,data: { confirm: '本当に削除していいですか？' } %></td>
-
   </tr>
 <% end %>
 </table>
 
-<%= link_to '新しくツイートを投稿する', new_blog_path %>
+
+<<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Place sticky footer content here.</p>
+  </div>
+</footer>

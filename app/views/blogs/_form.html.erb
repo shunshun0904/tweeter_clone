@@ -12,10 +12,10 @@
   <% end %>
 
   <div class="blog_title">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
+      <%= form.label :content  %>
+      <%= form.text_area :content, :size=>"60×100"%>
   </div>
-  <%= form.submit %>
+  <%= form.submit :つぶやく　%>
 <% end %>
 
 <%= link_to "tweet一覧画面にもどる", blogs_path %>
