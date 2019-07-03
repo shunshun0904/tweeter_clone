@@ -30,6 +30,11 @@
 </div>
 
 <table align="center">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" style="width: 400px">No.</th>
+    </tr>
+  </thead>
 <% @blogs.each do |blog| %>
   <tr>
     <td height="80"><%= simple_format(blog.content) %></td>
