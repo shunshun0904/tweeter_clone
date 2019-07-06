@@ -7,6 +7,7 @@ ruby '2.4.5'
 gem 'rails', '~> 5.2.3'
 gem 'rails_12factor', '0.0.2'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # Middleware
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
